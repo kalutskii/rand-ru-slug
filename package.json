@@ -1,0 +1,41 @@
+{
+  "name": "rand-ru-slug",
+  "version": "1.0.1",
+  "author": "Ilya Kalutskii",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^24.0.15",
+    "prettier": "^3.6.2",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "description": "Random Russian slug generator, inspired by unique-username-generator.",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalutskii/rand-ru-slug.git"
+  },
+  "homepage": "https://github.com/kalutskii/rand-ru-slug#readme",
+  "keywords": [
+    "username",
+    "slug",
+    "random",
+    "russian",
+    "generator"
+  ]
+}
