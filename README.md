@@ -37,7 +37,13 @@ You can provide your own dictionaries or change the separator:
 ```ts
 import { generateSlug } from 'rand-ru-slug';
 
-const slug = generateSlug(['red', 'blue'], ['chair', 'table'], { sep: '_' });
+const slug = generateSlug(
+  [
+    ['red', 'blue'],
+    ['chair', 'table'],
+  ],
+  { sep: '_' }
+);
 
 console.log(slug);
 // example: "blue_chair"
